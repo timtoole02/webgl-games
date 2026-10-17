@@ -1,0 +1,15 @@
+{
+  "name": "afterburn-verification",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "description": "Browser checks for AFTERBURN: Orbital Assault; the game itself has no build step.",
+  "scripts": {
+    "serve": "node serve.cjs",
+    "test": "node verify.cjs && node verify-score.cjs && node verify-arcade.cjs && node verify-passages.cjs",
+    "screenshots": "node visual-check.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

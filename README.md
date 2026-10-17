@@ -7,6 +7,7 @@ See [DESIGN.md](DESIGN.md) for the shared design philosophy, quality rubric, and
 
 ## games
 
+- [AFTERBURN: Orbital Assault](afterburn-orbital-assault.html) — [controls, GPU launcher, and verification](AFTERBURN.md)
 - [3D Audio Meter](https://josh-english-2k18.github.io/webgl-games/3d-audio-meter.html) (`3d-audio-meter.html`)
 - [Axiom Breach](https://josh-english-2k18.github.io/webgl-games/axiom-breach.html) (`axiom-breach.html`)
 - [Rift Conductor](https://josh-english-2k18.github.io/webgl-games/rift-conductor.html) (`rift-conductor.html`)
@@ -48,6 +49,8 @@ See [DESIGN.md](DESIGN.md) for the shared design philosophy, quality rubric, and
 - [Barycentric Dawn AGY](https://josh-english-2k18.github.io/webgl-games/barycentric-dawn-agy.html) (`barycentric-dawn-agy.html`)
 
 ## notes
+
+`afterburn-orbital-assault.html` is a side-scrolling arcade shooter with permanent invincibility, a yellow-and-black honeycomb ship, reflective metal enemies, four upgradeable weapons, Overdrive, and a three-phase flagship battle. Parallax terrain, mountain passes, crystal caves, industrial gates, and reactor tunnels scroll right to left along the flight corridor. An original SNES-inspired guitar score switches to a heavier industrial metal composition for the boss. Includes touch controls, a tuning drawer, a Windows Chrome high-performance GPU launcher, and browser checks. See [AFTERBURN.md](AFTERBURN.md) for setup and controls.
 
 `ball-physics-simulation.html` is the original r128 global-script ball-physics container demo and should remain available for comparison.
 
