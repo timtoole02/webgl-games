@@ -492,3 +492,15 @@ Core Systems:
 - **Cameras & Presentation**: Pursuit (chase), Cockpit (1st-person with 3D reticle), Apex (tactical), and Drift (cinematic letterboxed).
 - **Director Console & Deterministic Diagnostics**: Live tuning of flight physics, blade tension, optics, bloom, and audio; non-visual diagnostics suite under `window.__asteroidsGeminiDiagnostics.run()`.
 - **Readiness Flags**: `window.__asteroidsGemini38FlashReady`, `window.__asteroidsGeminiReady`, and `window.__asteroids38FlashReady`.
+
+## AFTERBURN: Orbital Assault
+
+File: `afterburn-orbital-assault.html`. Setup, controls, and verification: [AFTERBURN.md](AFTERBURN.md).
+
+A side-scrolling power-fantasy shooter with permanent invincibility, four upgradeable weapons, Overdrive, and a three-phase flagship battle. The Hornet player ship uses yellow-and-black honeycomb armor; enemies and the flagship use generated metal textures and environment reflections.
+
+- **Horizontal travel**: Crystal caves, reactor tunnels, industrial gates, speed streaks, and Mode 7-inspired decks follow the horizontal flight axis. Passage segments move right to left at fixed depth and scale, recycling offscreen. Explosion debris retains camera-directed motion for impact.
+- **Terrain and staging**: Six cliff layers at three speeds, instanced boulders, mountains, and industrial installations fill the route. Celestial scenery hides inside enclosed passages, and the corridor opens before the boss fight.
+- **Original procedural music**: Starlight Run combines an SNES-style hook, distorted guitars, bass, drums, and orchestral accents. Iron Maw is a separate 132 BPM industrial metal boss cue with phase-dependent instrumentation. Pause/restart releases active voices; music and effects have separate controls.
+- **GPU visibility**: The HUD reports the actual WebGL renderer. `Play-NVIDIA.cmd` launches Chrome with a separate profile and requests the high-performance adapter; browser/system configuration still decides which GPU is used.
+- **Verification**: `tests/afterburn/` covers gameplay, complete audio arrangements, model materials, terrain, horizontal passage motion, boss transitions, replay resource reuse, and phone framing. Generated reports and media are ignored. Readiness and diagnostic hooks are `window.__afterburnReady` and `window.__afterburnDiagnostics`.
